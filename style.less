@@ -1,0 +1,200 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body,html{
+	height: 100%;
+	background-color: black;
+}
+
+.first-page{
+	min-height: 100%;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #123 url(img/nature2.jpg) top center no-repeat;
+	background-size: cover;
+	//box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.33);
+
+	.title h1{
+		font-size: 86px;
+		color: black;
+	}
+
+
+}
+
+
+.west,
+.north,
+.east,
+.south{
+	min-height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	.cards{
+	
+
+		.card{
+			width: 200px;
+			height: 350px;
+
+			display: inline-block;
+			position: relative;
+			transition: 0.3s all ease-in-out;
+			box-shadow: inset 200px 200px 200px rgba(0,0,0,0.3);
+			
+			&:last-child{
+				margin-right: 0;
+
+			}
+
+			&:hover{
+				transform: scale(1.05);
+				box-shadow: none;
+				transition: 0.3s all ease-in-out;
+			}
+		}
+		.shadow{
+			box-shadow: 10px solid white;
+			//opacity: 0.3;
+		}
+		.higher{
+			margin: 50px;
+		}
+
+	}
+
+
+	.letter{
+		font-size: 40px;
+		position: absolute;
+		bottom: -22px;
+		left: 0;
+		right: 0;
+		color: white;
+	}
+
+	.describe{
+		color: white;
+		width: 50%;
+		margin: 30px auto;
+	}
+}
+
+.west{
+	.imgWestW{
+		background: #123 url(img/west1.jpg) no-repeat center center;
+		background-size: cover;
+		
+		
+	}
+
+	.imgWestE{
+		background: #123 url(img/west2.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgWestS{
+		background: #123 url(img/west3.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgWestT{
+		background: #123 url(img/west4.jpg) no-repeat left top;
+		background-size: cover;
+	}
+}
+
+.north{
+	.imgNorthN{
+		background: #123 url(img/north1.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgNorthO{
+		background: #123 url(img/north2.jpg) no-repeat center top;
+		background-size: cover;
+
+	}
+	.imgNorthR{
+		background: #123 url(img/north3.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgNorthT{
+		background: #123 url(img/north4.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgNorthH{
+		background: #123 url(img/north5.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+}
+
+.east{
+	.imgEastE{
+		background: #123 url(img/east1.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgEastA{
+		background: #123 url(img/east2.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgEastS{
+		background: #123 url(img/east3.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgEastT{
+		background: #123 url(img/east4.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+}
+
+.south{
+	.imgSouthS{
+		background: #123 url(img/south1.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgSouthO{
+		background: #123 url(img/south2.jpg) no-repeat left top;
+		background-size: cover;
+
+	}
+	.imgSouthU{
+		background: #123 url(img/south3.jpg) no-repeat center top;
+		background-size: cover;
+
+	}
+	.imgSouthT{
+		background: #123 url(img/south4.jpg) no-repeat center top;
+		background-size: cover;
+
+	}
+	.imgSouthH{
+		background: #123 url(img/south5.jpg) no-repeat center top;
+		background-size: cover;
+
+	}
+}
+
+
+
+
+
+
+

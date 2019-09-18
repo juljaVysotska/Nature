@@ -73,16 +73,25 @@ body,html{
 	align-items: center;
 	
 	.cards{
+
+		display: flex;
+		justify-content: center;
 	
 
 		.card{
-			width: 200px;
-			height: 350px;
+			width: 300px;
+			height: 550px;
 
-			display: inline-block;
 			position: relative;
 			transition: 0.3s all ease-in-out;
 			box-shadow: inset 200px 200px 200px rgba(0,0,0,0.3);
+			margin: 0 30px; 
+
+			img{
+				height: 100%;
+				width:100%;
+				object-fit: cover;
+			}
 			
 			&:last-child{
 				margin-right: 0;
@@ -90,18 +99,22 @@ body,html{
 			}
 
 			&:hover{
-				transform: scale(1.05);
-				box-shadow: none;
-				transition: 0.3s all ease-in-out;
+				transform: translateY(-15px);
+				transition: 0.3s all ease-in-out;					
+				
 			}
+
+
+			&:nth-child(2n){
+				margin-top: 50px;
+			}
+
+
+
+
+
 		}
-		.shadow{
-			box-shadow: 10px solid white;
-			//opacity: 0.3;
-		}
-		.higher{
-			margin: 50px;
-		}
+
 
 	}
 
@@ -110,7 +123,7 @@ body,html{
 		font-size: 60px;
 		line-height: 65px;
 		position: absolute;
-		bottom: calc(-65px / 2);
+		bottom: 0;
 		left: 0;
 		right: 0;
 		color: white;
@@ -125,113 +138,3 @@ body,html{
 		.font-thin-Fira();
 	}
 }
-
-.west{
-	.imgWestW{
-		background: #123 url(../img/west1.jpg) no-repeat center center;
-		background-size: cover;
-		
-		
-	}
-
-	.imgWestE{
-		background: #123 url(../img/west2.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgWestS{
-		background: #123 url(../img/west3.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgWestT{
-		background: #123 url(../img/west4.jpg) no-repeat left top;
-		background-size: cover;
-	}
-}
-
-.north{
-	.imgNorthN{
-		background: #123 url(../img/north1.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgNorthO{
-		background: #123 url(../img/north2.jpg) no-repeat center top;
-		background-size: cover;
-
-	}
-	.imgNorthR{
-		background: #123 url(../img/north3.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgNorthT{
-		background: #123 url(../img/north4.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgNorthH{
-		background: #123 url(../img/north5.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-}
-
-.east{
-	.imgEastE{
-		background: #123 url(../img/east1.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgEastA{
-		background: #123 url(../img/east2.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgEastS{
-		background: #123 url(../img/east3.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgEastT{
-		background: #123 url(../img/east4.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-}
-
-.south{
-	.imgSouthS{
-		background: #123 url(../img/south1.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgSouthO{
-		background: #123 url(../img/south2.jpg) no-repeat left top;
-		background-size: cover;
-
-	}
-	.imgSouthU{
-		background: #123 url(../img/south3.jpg) no-repeat center top;
-		background-size: cover;
-
-	}
-	.imgSouthT{
-		background: #123 url(../img/south4.jpg) no-repeat center top;
-		background-size: cover;
-
-	}
-	.imgSouthH{
-		background: #123 url(../img/south5.jpg) no-repeat center top;
-		background-size: cover;
-
-	}
-}
-
-
-
-
-
-
-
